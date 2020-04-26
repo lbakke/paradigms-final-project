@@ -1,0 +1,16 @@
+extends layout 
+
+block content
+
+  h1 The Emperor Penguin. 
+  .topnav
+    button#indexButton Home
+    button#emperorButton Emperor
+    button#macaroniButton Macaroni
+  .main
+    h2 Here's some more info about the penguin
+    p fans so far: #{count}
+    img(src='images/Emperor-Penguin.jpg')
+    form(action="/emperor",method="POST")
+        button#submitButton LIKE
+    script(src='javascripts/client.js')
