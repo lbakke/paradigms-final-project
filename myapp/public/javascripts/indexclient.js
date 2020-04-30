@@ -20,9 +20,32 @@ indexButton.addEventListener('click', function(e) {
   location.href = myURL.concat("/"); 
 }); 
 
-const socialCuesButton = document.getElementById('socialCuesButton'); 
-socialCuesButton.addEventListener('click', function(e) {
-  console.log("social cues pressed"); 
-  location.href = myURL.concat("/social"); 
+const mapButton = document.getElementById('mapButton'); 
+mapButton.addEventListener('click', function(e) {
+  console.log("map pressed"); 
+  location.href = myURL.concat("/map"); 
 }); 
  
+function initMap() {
+  var potowami = {
+    lat: 41.670768, 
+    lng: -86.218401
+  }; 
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: potowami,
+    zoom: 18, 
+    mapTypeId: 'satellite'
+  }); 
+
+  var monkeyCage = {
+    lat: 41.670768,
+    lng: -86.218338
+  }; 
+  var marker = new google.maps.Marker({ 
+    position: monkeyCage,
+    label: { color: '#f7f7f7', fontWeight: 'bold', fontSize: '10px', text: 'Camels' }, 
+    map: map
+  }); 
+}
+

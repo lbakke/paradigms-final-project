@@ -16,6 +16,10 @@ exports.macaroni = function(req, res, next) {
     res.render('macaroni', {'count': likes.macaroni}); 
 }
 
+exports.map = function(req, res, next) {
+	res.render('map', {markers: 'Markers will go here.'}); 
+}
+
 exports.like_emperor = function(req, res, next) {
 	likes.emperor += 1
 	data = JSON.stringify(likes, null, 2); 
@@ -35,5 +39,4 @@ exports.like_macaroni = function(req, res, next) {
 	}); 
 	res.redirect('/macaroni');
 }
-
 

@@ -1,12 +1,15 @@
 extends layout
 
-block content
-  h1 Welcome to our favorite penguins!
+block content 
+
+  h1 Map? 
   .topnav
     button#indexButton Home
     button#emperorButton Emperor
     button#macaroniButton Macaroni
     button#mapButton Penguin Map
   .main
-    p Hello! please check out our favorite penguins, and make sure you drop a "like" if you like any of them! cheers.
     script(src='javascripts/indexclient.js')
+    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAzGiFsz36fALXvIMm0Ho2Kq8DbhfbJrpw&callback=initMap', <='', script='')
+  .map
+    #map
