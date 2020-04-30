@@ -1,6 +1,7 @@
 console.log("client side code running"); 
 
-const myURL = "http://student04.cse.nd.edu:51025"; 
+// const myURL = "http://student04.cse.nd.edu:51025";
+const myURL = ""; 
 
 const emperorButton = document.getElementById('emperorButton'); 
 emperorButton.addEventListener('click', function(e) {

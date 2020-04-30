@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  .main
+    img(src='images/macaroni.jpg' class="main-display")
+    p
+      | Lifespan: around 8 to 15 years<br>
+      | Habitat: subantarctic islands (Falkland Islands, South Georgia Island, etc.), Antarctic Peninsula
+    p Likes: #{likes}
+    form(action="/macaroni",method="POST")
+      button#like-button Like

@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  .main
+    img(src='images/gentoo.jpg' class="main-display")
+    p
+      | Lifespan: around 15 years<br>
+      | Habitat: subantarctic islands (Falkland Islands, South Georgia Island), Antarctic Peninsula
+    p Likes: #{likes}
+    form(action="/gentoo",method="POST")
+      button#like-button Like

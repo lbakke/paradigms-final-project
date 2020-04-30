@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  .main
+    img(src='images/emperor.jpg' class="main-display")
+    p
+      | Lifespan: around 20 years<br>
+      | Habitat: Antarctica
+    p Likes: #{likes}
+    form(action="/emperor",method="POST")
+      button#like-button Like

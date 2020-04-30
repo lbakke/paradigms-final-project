@@ -1,0 +1,93 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.landing-display {
+  width: 70vw;
+  height: 30vw;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  object-fit: cover; 
+}
+
+.main-display {
+  width: 30vw;
+  height: 30vw;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  object-fit: cover;
+}
+
+.top-nav {
+  padding: 5px 0px;
+}
+
+.nav-button {
+  background-color: rgb(82, 120, 176);
+  border: 2px solid rgb(82, 120, 176);
+  border-radius: 2px;
+  color: white;
+  padding: 15px 32px;
+  margin: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.nav-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+.item-display {
+  width: 20vw;
+  height: 20vw;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  object-fit: cover;
+}
+
+#map {
+  width: 75vw; 
+  height: 75vh;
+  padding: 20px 10px;
+  border: 2px solid white;
+  border-radius: 2px;
+}
+
+.mapnav {
+  padding: 5px 0px;
+}
+
+.map-button {
+  background-color: rgb(82, 120, 176);
+  border: 2px solid rgb(82, 120, 176);
+  border-radius: 2px;
+  color: white;
+  padding: 15px 32px;
+  margin: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}

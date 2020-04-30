@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  .main
+    img(src='images/galapagos.jpg' class="main-display")
+    p
+      | Lifespan: around 15 years<br>
+      | Habitat: Galapagos Islands
+    p Likes: #{likes}
+    form(action="/galapagos",method="POST")
+      button#like-button Like
