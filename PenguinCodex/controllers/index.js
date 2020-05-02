@@ -43,3 +43,7 @@ exports.map = function(req, res, next) {
     res.send(habitats);
     // res.render('map', {header: "Map"});
 }
+
+/*exports.data = function(req, res, next) {
+    res.json("here is the json data coming from server..?"); 
+}*/

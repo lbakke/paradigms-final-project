@@ -84,6 +84,24 @@ function setIcons(species) {
     map.setCenter(habitats[species]["origin"]);      // center around antarctica
 }
 
+/*function getData() {
+	console.log("calling the function to get data from the server"); 
+	$.ajax({
+		url: 'http://student04.cse.nd.edu:51025/data', 
+		type: 'GET', 
+
+		success: function (data) {
+			$('#comingFromServer').html(data); 
+			console.log("data coming from server")
+			console.log(data)
+		}, 
+		error: function (xhr, status, error) {
+			console.log('Error: ' + error.message); 
+			$('#comingFromServer').html('Error connecting to the server.'); 
+		}, 
+	}); 
+}*/
+	
 const mapButton = document.getElementsByClassName('map-button');
 console.log(mapButton);
 for (let i=0; i<mapButton.length; i++) {
