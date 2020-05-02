@@ -3,7 +3,6 @@ var router = express.Router();
 
 let index = require('../controllers/index');
 let like = require('../public/javascripts/like');
-let map = require('../public/javascripts/map');
 
 /* GET home page. */
 router.get('/', index.index);
@@ -13,7 +12,7 @@ router.get('/gentoo', index.gentoo);
 router.get('/macaroni', index.macaroni);
 router.get('/summary', index.summary);
 router.get('/map', index.map);
-//router.get('/data', index.data); 
+router.get('/data', index.data); 
 
 router.post('/emperor', like.like);
 router.post('/galapagos', like.like);

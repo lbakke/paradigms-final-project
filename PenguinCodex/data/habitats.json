@@ -2,12 +2,12 @@
     "emperor": {
         "origin": {
             "lat": 0,
-            "long": 0
+            "lng": 0
         },
         "habitats": [
            {
                 "lat": -74.082431,
-                "long": 43.863030
+                "lng": 43.863030
             }
         ]
     },
@@ -16,7 +16,7 @@
             "lat": 0,
             "lng": 0
         },
-        "habitat": [
+        "habitats": [
             {
                 "lat": -0.300635,
                 "lng": -90.643811
@@ -28,7 +28,7 @@
             "lat": 0,
             "lng": 0
         },
-        "habitat": [
+        "habitats": [
             {
                 "lat": -54.418799,
                 "lng": -36.376509
@@ -48,7 +48,7 @@
             "lat": 0,
             "lng": 0
         },
-        "habitat": [
+        "habitats": [
             {
                 "lat": -55.431455,
                 "lng": -68.253017

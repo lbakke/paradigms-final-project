@@ -40,10 +40,8 @@ exports.summary = function(req, res, next) {
 }
 exports.map = function(req, res, next) {
     console.log("Rendering MAP");
-    res.send(habitats);
-    // res.render('map', {header: "Map"});
+    res.render('map', {header: "Map"});
 }
-
-/*exports.data = function(req, res, next) {
-    res.json("here is the json data coming from server..?"); 
-}*/
+exports.data = function(req, res, next) {
+    res.json(habitats); 
+}
