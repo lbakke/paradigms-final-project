@@ -32,6 +32,7 @@ function setIcons(habitats, species) {
     }
 
     map.setZoom(2); 
+    map.setCenter(madagascar); 
 }
 
 function getData() {

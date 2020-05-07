@@ -45,3 +45,7 @@ exports.map = function(req, res, next) {
 exports.data = function(req, res, next) {
     res.json(habitats); 
 }
+exports.deliverable = function(req, res, next) {
+    console.log("Rendering DELIVERABLE");
+    res.render('deliverable', {header: "Deliverable"});
+}
